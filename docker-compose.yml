@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=ame-cardApi
+      - POSTGRES_PASSWORD=ame
+      - POSTGRES_DB=ame_card_api
+    ports:
+      - '5432:5432'
